@@ -15,9 +15,8 @@ const Article = ({title, date = 'January 1, 1970', preview, minutes = 0}) => {
   return (    
     <article>
         <h3>{title}</h3>
-        <small>{date}</small>
-        <p>{preview}</p>
-        <p>{emojis} {minutes} mins read</p>
+        <small>{date} {emojis} {minutes} mins read</small>
+        <p>{preview}</p>        
     </article>       
   )
 }
